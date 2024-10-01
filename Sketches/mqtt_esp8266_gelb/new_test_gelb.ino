@@ -1,4 +1,4 @@
-#include <ESP8266WiFi.h>
+#include <ESP8266WiFi.h> //Test neuer Verbindungsmethode
 #include <PubSubClient.h>
 #include <ArduinoOTA.h>
 
@@ -14,8 +14,8 @@
 #define IN_TOPIC "esp8266gelb/intopic"
 
 // Pin-Definitionen für ESP8266
-#define LED_PIN D1     // GPIO5 (D1 auf NodeMCU)
-#define BUTTON_PIN D2  // GPIO4 (D2 auf NodeMCU)
+#define LED_PIN D1     // GPIO5 (D1 auf esp8266)
+#define BUTTON_PIN D2  // GPIO4 (D2 auf esp8266)
 
 // Konstanten für Timing
 const unsigned long BUTTON_DEBOUNCE_DELAY = 50;  // Entprellverzögerung in Millisekunden
@@ -30,7 +30,7 @@ int lastButtonState = HIGH;  // Geändert zu HIGH wegen INPUT_PULLUP
 unsigned long lastDebounceTime = 0;
 
 void setup() {  
-  Serial.begin(115200);
+  Serial.begin(115200); //evtl zu viel Standart:9600 //prüfen
   setup_wifi();
   setup_ota();
   setup_mqtt();
