@@ -65,7 +65,7 @@ Diese zukünftigen Entwicklungen sollen das Projekt robuster und vielseitiger ma
 ## Quellen
 
 Für die Entwicklung dieses Projekts wurden verschiedene Quellen unteranderem aus dem Internet herangezogen, um die Implementierung und die technischen Details zu unterstützen. Eine vollständige Liste der verwendeten Ressourcen wird in der Dokumentation hinzugefügt.
-[Quellenverzeichnis](./source.md)
+[Quellenverzeichnis](./sources.md)
 
 ## Lizenz
 
