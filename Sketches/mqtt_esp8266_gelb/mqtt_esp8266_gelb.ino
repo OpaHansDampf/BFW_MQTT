@@ -54,7 +54,7 @@ void loop() {
     // Kurze Pause zum entprellen
     delay(100);
   }
-  lastButtonState = buttonState;
+  lastButtonState = buttonState; //fehler
 }   
    
 void setup_wifi() {
